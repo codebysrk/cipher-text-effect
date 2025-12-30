@@ -26,10 +26,6 @@ heading.addEventListener("pointerenter", () => {
     }
 
     iteration += 1 / 3;
+    console.log(iteration);
   }, intervalDuration);
-});
-
-heading.addEventListener("pointerleave", () => {
-  clearInterval(interval);
-  heading.innerText = text;
 });
