@@ -6,7 +6,7 @@ const intervalDuration = 50;
 let iteration = 0;
 let interval = null;
 
-heading.addEventListener("pointerenter", () => {
+function decodeText() {
   clearInterval(interval);
   iteration = 0;
 
@@ -28,4 +28,6 @@ heading.addEventListener("pointerenter", () => {
     iteration += 1 / 3;
     console.log(iteration);
   }, intervalDuration);
-});
+}
+heading.addEventListener("pointerenter", decodeText);
+
